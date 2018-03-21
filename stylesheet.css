@@ -1,0 +1,270 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,700');
+@import url('https://fonts.googleapis.com/css?family=Playfair+Display');
+
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+
+/*.clearfix:after {
+	content: '';
+	display: block;
+	clear: both;
+}*/
+
+header {
+	padding: 100px;
+	background: url("headerback.png");
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+header, article {
+	color: white;
+}
+
+nav {
+	position: relative;
+	height: 50px;
+	padding: 5px;
+}
+
+.circle {
+	position: relative;
+	z-index: 100;
+	height: 36.5px;
+	width: 36.5px;
+	border-radius: 100%;
+	border: 3.5px solid white;
+	float: left;
+}
+
+nav div {
+	position: absolute;
+	z-index: 50;
+	text-align: center;
+	width: 100%;
+	top: 10px;
+}
+
+nav div a:link, nav div a:visited, nav div a:active {
+	color: white;
+	text-decoration: none;
+	font-family: Montserrat;
+	font-size: 15px;
+	font-weight: 800;
+	text-transform: uppercase;
+	margin: 0 20px;
+	opacity: 0.9;
+}
+
+nav div a:hover {
+	opacity: 1;
+}
+
+nav img {
+	position: relative;
+	z-index: 100;
+	float: right;
+	width: 25px;
+	height: 25px;
+	margin: 0 10px;
+	opacity: 0.9;
+}
+
+nav img:hover {
+	opacity: 1;
+}
+
+header h1 {
+	font-family: 'Playfair Display', serif;
+	font-weight: 400;
+	font-size: 140px;
+	text-align: center;
+	margin-top: 290px;
+}
+
+header p {
+	font-family: Montserrat;
+	font-size: 20px;
+	font-weight: 300;
+	line-height: 34px;
+	text-align: center;
+	margin-bottom: 100px;
+}
+
+header button {
+	display: block;
+	width: 160px;
+	height: 45px;
+	margin: 0 auto;
+	outline: none;
+	border: none;
+	background: #da7074;
+	font-family: Montserrat, sans-serif;
+	color:  #ffffff;
+	font-size: 14px;
+	font-weight: 700;
+	letter-spacing: 1px;
+	text-transform: uppercase;
+	border-radius: 35px;
+	position: relative;
+	cursor: pointer;
+}
+
+header button:active {
+	background: #ba5054
+}
+
+header button::before, header button::after {
+	content: '';
+	display: block;
+	width: 200px;
+	height: 1.5px;
+	background: #da7074;
+	position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+header button::before {
+	right: 160px;
+}
+
+header button::after {
+	left: 160px;
+}
+
+.v-line {
+	display: block;
+	width: 1px;
+	height: 220px;
+	background: #da7074;
+	float: left;
+	position: relative;
+	left: 50%;
+	top: 60px;
+}
+
+.v-line:nth-child(6) {
+	margin-left: 3px;
+	margin-top: 5px;
+}
+
+header > a {
+	display: block;
+	margin: 100px auto 0;
+	height: 65px;
+	width: 65px;
+}
+
+header > a img {
+	display: block;
+	margin: 0 auto;
+	height: 65px;
+	width: 65px;
+}
+
+article {
+	overflow: auto;
+}
+
+article section {
+	width: 25%;
+	height: 500px;
+	float: left;
+	padding-top: 325px;
+}
+
+article section:nth-child(1) {
+	background: url("article1.png");
+}
+
+article section:nth-child(2) {
+	background: url("article2.png");
+}
+
+article section:nth-child(3) {
+	background: url("article3.png");
+}
+
+article section:nth-child(4) {
+	background: url("article4.png");
+}
+
+article section h3 {
+	font-family: Montserrat, sans-serif;
+	font-weight: 600;
+	font-size: 18px;
+	line-height: 30px;
+	text-align: center;
+	text-transform: uppercase;
+}
+
+article section p {
+	font-family: Georgia;
+	font-size: 18px;
+	font-style: italic;
+	line-height: 30px;
+	text-align: center;
+}
+
+footer {
+	padding: 50px 10% 150px;
+	position: relative;
+}
+
+footer section {
+	width: 25%;
+	float: left;
+}
+
+footer section h3 {
+	font-family: Montserrat;
+	font-size: 14px;
+	font-weight: 700;
+	line-height: 26px;
+	text-transform: uppercase;
+}
+
+footer section p {
+	font-family: Georgia;
+	color:  #777;
+	font-size: 14px;
+	font-style: italic;
+	line-height: 26px;
+	margin-top: 30px;
+}
+
+.footer-list {
+	list-style-type: none;
+	margin-top: 30px;
+}
+
+.footer-list li a {
+	font-family: Georgia;
+	color:  #777;
+	font-size: 14px;
+	font-style: italic;
+	line-height: 26px;
+	text-decoration: none;
+}
+
+footer aside {
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	background: black;
+	width: 100%;
+	height: 100px;
+}
+
+footer aside p {
+	font-family: Georgia;
+	color: #555;
+	font-size: 12px;
+	font-style: italic;
+	line-height: 100px;
+	text-align: center;
+}
